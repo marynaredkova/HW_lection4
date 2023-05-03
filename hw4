@@ -1,0 +1,43 @@
+#1 Опис
+class Vehicle:
+    def __init__(self, car_type, max_speed, mileage):
+        self.car_type = str(car_type)
+        self.max_speed = float(max_speed)
+        self.mileage = int(mileage)
+        
+        
+car = Vehicle('bike', 80, 7000)
+print(car.car_type, car.max_speed, car.mileage)
+
+
+
+
+
+#capacity=50
+class Bus(Vehicle):
+    
+    def seating_capacity(self, capacity=50):
+        return f"Capacity of {self.car_type} = {capacity}"
+    
+bus("bike", 80, 7000).seating_capacity()
+
+
+
+
+
+#class AVTO WHITE
+class Vehicle:
+    color = 'white'
+    def __init__(self, car_type, max_speed, mileage):
+        self.car_type = str(car_type)
+        self.max_speed = float(max_speed)
+        self.mileage = int(mileage)
+
+class Bus(Vehicle):
+    pass
+
+class Car(Vehicle):
+    pass
+
+Bus('bike', 80, 7000)
+Bus.color
